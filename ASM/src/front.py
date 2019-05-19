@@ -49,7 +49,7 @@ def check():
         return "-2"
     elif session['nxt'] == request.form['ans']:
         session['correct'] += 1
-        if session['correct'] >= 100 and \
+        if session['correct'] >= 30 and \
             timer <= timeout:
                 return json.dumps({"flag": flag})
 
